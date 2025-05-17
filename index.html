@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/0a125fab0e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div id="container">
+      <nav>
+        <img src="images/ss1.png" class="ss1">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Hi,</p>
+        <h1>I am <span>Mahi Raj</span><br> a Frontend Developer</h1>
+      </div>
+    </div>
+  </div>
+ <!-- -------About ------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/mahi .jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p> I'm a passionate and detail-oriented professional with a strong interest in Web Development. I enjoy turning ideas into impactful solutions and constantly seek to grow through new challenges and learning opportunities. Whether working independently or in a team, I bring creativity, dedication, and a problem-solving mindset to every project.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+             <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+             <li><span>Web Development</span><br>Web Development</li>
+             <li><span>Data Analytics</span><br>Strategic, Predictive decisions</li> 
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+             <li><span>Web Dev Intern, Code Alpha</span><br>Worked on different tasks which involved usage of HTML, CSS , JavaScript , React JS.</li>
+             <li><span>AI/ML Intern, Tech Saksham</span><br>Developed a disease pre-diagnosis system using Python, Streamlit, and ML classification models.</li>
+             <li><span>Java Dev Intern, Pinnacle Labs</span><br>Worked on Java Swing for desktop interfaces and Flutter for cross-platform app development.</li> 
+            </ul>
+          </div>
+     
+          <div class="tab-contents" id="education">
+            <ul>
+             <li><span>Programming Languages</span><br>C, C++, Java, Python, HTML, CSS, SQL, SWING</li>
+             <li><span>Developer Tools</span><br>VS Code, Eclipse, Anaconda, Android Studio</li>
+             <li><span>Technologies/Frameworks</span><br> Linux, Canva, GitHub, Figma, WordPress, Adobe, Tableau</li> 
+            </ul>
+          </div>
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------Services----------->
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>I create visually appealing, user-friendly websites that blend aesthetics with functionality.
+               <!-- My web design work focuses on responsive layouts, intuitive navigation, and engaging user experiences, ensuring each site not only looks great but performs seamlessly across all devices.</p> -->
+                <br>
+            <a href="#">Learn more</a>
+
+            <h2>UI/UX Design</h2>
+            <i class="fa-solid fa-crop-simple"></i>
+            <p>I design intuitive and engaging user interfaces that enhance the overall user experience.
+               <!-- My approach combines user research, wireframing, and prototyping to create seamless, accessible, and visually consistent digital products that meet both user needs and business goals.</p> -->
+                <br>
+            <a href="#">Learn more</a>
+
+            <h2>Data Analytics</h2>
+            <i class="fa-solid fa-chart-simple"></i>
+            <p>I leverage data analytics to uncover patterns, generate insights, and support data-driven decision-making.
+               <!-- By using tools like Excel, Python, I transform raw data into meaningful visualizations and reports that drive strategic actions and improve performance.</p> -->
+                <br>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+    </div>
+   </div>
+<!----------------Portfolio------------>
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+   <div class="work-list">
+    <div class="work">
+      <img src="images/work-1.png">
+      <div class="layer">
+        <h3>Social Media App</h3>
+        <p>The app connects you to the talented people around the world.Download it from play Store.</p>
+        <a href="https://play.google.com/store/games?device=windows&pli=1"><i class="fa-solid fa-up-right-from-square"></i></a>
+      </div>
+    </div>
+    <div class="work">
+      <img src="images/work-2.png">
+      <div class="layer">
+        <h3>Music App</h3>
+        <p>The app connects you to the talented people around the world.Download it from play Store.</p>
+        <a href="https://open.spotify.com/"><i class="fa-solid fa-up-right-from-square"></i></a>
+      </div>
+    </div>
+    <div class="work">
+      <img src="images/work-3.png">
+      <div class="layer">
+        <h3>Online Shopping App</h3>
+        <p>The app connects you to the talented people around the world.Download it from play Store.</p>
+        <a href="https://www.amazon.in/s/?ie=UTF8&keywords=myntra&index=aps&tag=msndeskstdin-21&ref=pd_sl_5p05wztw2s_e&adgrpid=1320515070944839&hvadid=82532462422317&hvnetw=o&hvqmt=e&hvbmt=be&hvdev=c&hvlocint=&hvlocphy=148752&hvtargid=kwd-82533066623487:loc-90&hydadcr=2731_2386493&mcid=2d1b531805443a538d3bea523745cfd9&msclkid=bcb03d081ff412a8329b5513b0a52458"><i class="fa-solid fa-up-right-from-square"></i></a>
+      </div>
+    </div>
+   </div> 
+
+   <a href="#" class="btn">See more</a>
+  </div>
+</div>
+<!--------------Contact------------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+       <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>mahisingh16945@gmail.com</p>
+        <p><i class="fa-solid fa-square-phone"></i>8340506182</p>
+        <div class="social-icons">
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/mahi-raj-b911b5315/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/Mahiraj22"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <a href="images/my-resume11.pdf" download class="btn btn2">Download Resume</a>
+       </div>
+       <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+       </div>
+    </div>
+  </div>
+<div class="copyright">
+  <p>Copyright © Mahi. Made by <i class="fa-solid fa-heart"></i> me  </p>
+</div>
+
+</div>
+
+
+
+  <script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+   function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+   }
+  </script>
+
+  <script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+      sidmeu.style.right = "0";
+    }
+    function closemenu(){
+      sidmeu.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz7GQNKHOPHMgZJERpgcZCAYrtw8CfNdselVMTtE-6Y86UQ798kfP_oO65S2zI6mRFbDQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
